@@ -16,18 +16,18 @@ After feeling like you've been falling for a few minutes, you look at the device
 
 For example, if the device displays frequency changes of `+1, -2, +3, +1`, then starting from a frequency of zero, the following changes would occur:
 
-- Current frequency <code> 0</code>, change of `+1`; resulting frequency <code> 1</code>.
-- Current frequency <code> 1</code>, change of `-2`; resulting frequency <code>-1</code>.
-- Current frequency <code>-1</code>, change of `+3`; resulting frequency <code> 2</code>.
-- Current frequency <code> 2</code>, change of `+1`; resulting frequency <code> 3</code>.
+- Current frequency <code>&nbsp;0</code>, change of `+1`; resulting frequency <code>&nbsp;1</code>.
+- Current frequency <code>&nbsp;1</code>, change of `-2`; resulting frequency `-1`.
+- Current frequency `-1`, change of `+3`; resulting frequency <code>&nbsp;2</code>.
+- Current frequency <code>&nbsp;2</code>, change of `+1`; resulting frequency <code>&nbsp;3</code>.
 
 In this example, the resulting frequency is `3`.
 
 Here are other example situations:
 
-- `+1, +1, +1` results in <code> 3</code>
-- `+1, +1, -2` results in <code> 0</code>
-- `-1, -2, -3` results in <code>-6</code>
+- `+1, +1, +1` results in <code>&nbsp;3</code>
+- `+1, +1, -2` results in <code>&nbsp;0</code>
+- `-1, -2, -3` results in `-6`
 
 Starting with a frequency of zero, **what is the resulting frequency** after all of the changes in frequency have been applied?
 
@@ -37,13 +37,13 @@ You notice that the device repeats the same frequency change list over and over.
 
 For example, using the same list of changes above, the device would loop as follows:
 
-- Current frequency <code> 0</code>, change of `+1`; resulting frequency <code> 1</code>.
-- Current frequency <code> 1</code>, change of `-2`; resulting frequency <code>-1</code>.
-- Current frequency <code>-1</code>, change of `+3`; resulting frequency <code> 2</code>.
-- Current frequency <code> 2</code>, change of `+1`; resulting frequency <code> 3</code>.
+- Current frequency <code>&nbsp;0</code>, change of `+1`; resulting frequency <code>&nbsp;1</code>.
+- Current frequency <code>&nbsp;1</code>, change of `-2`; resulting frequency `-1`.
+- Current frequency `-1`, change of `+3`; resulting frequency <code>&nbsp;2</code>.
+- Current frequency <code>&nbsp;2</code>, change of `+1`; resulting frequency <code>&nbsp;3</code>.
 - (At this point, the device continues from the start of the list.)
-- Current frequency <code> 3</code>, change of `+1`; resulting frequency <code> 4</code>.
-- Current frequency <code> 4</code>, change of `-2`; resulting frequency <code> 2</code>, which has already been seen.
+- Current frequency <code>&nbsp;3</code>, change of `+1`; resulting frequency <code>&nbsp;4</code>.
+- Current frequency <code>&nbsp;4</code>, change of `-2`; resulting frequency <code>&nbsp;2</code>, which has already been seen.
 
 In this example, the first frequency reached twice is `2`. Note that your device might need to repeat its list of frequency changes many times before a duplicate frequency is found, and that duplicates might be found while in the middle of processing the list.
 
