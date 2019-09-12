@@ -1,4 +1,4 @@
-[Day 1 - Advent of Code 2017](http://adventofcode.com/2017/day/1)
+[Day 1 - Advent of Code 2017](https://adventofcode.com/2017/day/1)
 
 ---
 
