@@ -1,12 +1,14 @@
-input = File.open('input.txt').read.split.map(&:to_i)
-list  = []
+require 'set'
+
+input = File.open('input.txt').each_line.map(&:to_i)
+set   = Set.new
 freq  = 0
 
-input.cycle do |f|
-  list << freq
-  freq += f
+input.cycle do |i|
+  set  << freq
+  freq += i
 
-  break if list.include? freq
+  break if set.include? freq
 end
 
 puts freq
