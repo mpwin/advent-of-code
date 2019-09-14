@@ -1,8 +1,7 @@
-input     = File.open('input.txt').read
 direction = 0 + 1i
 location  = 0 + 0i
 
-input.scan(/(L|R)(\d+)/).each do |turn, distance|
+File.open('input.txt').read.scan(/(L|R)(\d+)/).each do |turn, distance|
   case turn
   when 'L' then direction *=  1i
   when 'R' then direction *= -1i
