@@ -1,4 +1,4 @@
-input = File.open('input.txt').read
+input = File.read('input.txt')
 sum   = 0
 
 input.each_char.with_index do |char, index|
