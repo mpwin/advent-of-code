@@ -1,2 +1,2 @@
-input = File.open('input.txt').each_line.map(&:to_i)
+input = File.readlines('input.txt').map(&:to_i)
 puts input.sum
