@@ -4,12 +4,12 @@ loop do
   id = input.shift
 
   input.each do |line|
-    common = line.chars.select.with_index do |char, index|
+    match = line.chars.select.with_index do |char, index|
       char == id[index]
     end
 
-    if common.size == line.size - 1
-      puts common.join
+    if match.size == line.length - 1
+      puts match.join
       return
     end
   end
