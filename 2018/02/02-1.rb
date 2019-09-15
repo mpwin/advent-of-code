@@ -1,6 +1,6 @@
 twos, threes = 0, 0
 
-File.open('input.txt').each_line do |line|
+File.open('input.txt').each do |line|
   chars = Hash.new(0)
 
   line.each_char do |char|
