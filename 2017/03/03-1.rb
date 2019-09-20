@@ -7,16 +7,10 @@ while input > corner do
   corner += rings * 8
 end
 
-div = (corner - input) / rings
-mod = (corner - input) % rings
+while input <= corner do
+  corner -= rings * 2
+end
 
-steps =
-  if div % 2 == 0 && mod == 0
-    rings + rings - mod + 1
-  elsif div % 2 == 0
-    rings + rings - mod
-  else
-    rings + mod
-  end
+steps = (input - (corner + rings)).abs
 
-puts "Answer 1: #{steps}"
+puts steps + rings

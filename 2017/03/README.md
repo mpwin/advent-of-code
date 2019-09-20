@@ -1,4 +1,4 @@
-[Day 3 - Advent of Code 2017](http://adventofcode.com/2017/day/3)
+[Day 3 - Advent of Code 2017](https://adventofcode.com/2017/day/3)
 
 ---
 
@@ -6,7 +6,7 @@
 
 You come across an experimental new kind of memory stored on an infinite two-dimensional grid.
 
-Each square on the grid is allocated in a spiral pattern starting at a location marked 1 and then counting up while spiraling outward. For example, the first few squares are allocated like this:
+Each square on the grid is allocated in a spiral pattern starting at a location marked `1` and then counting up while spiraling outward. For example, the first few squares are allocated like this:
 
     17  16  15  14  13
     18   5   4   3  12
