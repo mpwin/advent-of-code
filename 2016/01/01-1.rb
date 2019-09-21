@@ -1,5 +1,5 @@
-direction = 0 + 1i
-location  = 0 + 0i
+direction = 1i
+location  = 0i
 
 File.read('input.txt').scan(/(L|R)(\d+)/).each do |turn, distance|
   case turn
