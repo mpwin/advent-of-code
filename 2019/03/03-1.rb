@@ -15,6 +15,6 @@ wire_1, wire_2 = File.open('input.txt').map do |input|
   wire
 end
 
-closest = (wire_1 & wire_2).min_by { |i| i.real.abs + i.imag.abs }
+min = (wire_1 & wire_2).min_by { |i| i.real.abs + i.imag.abs }
 
-puts closest.real.abs + closest.imag.abs
+puts min.real.abs + min.imag.abs

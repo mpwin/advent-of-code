@@ -32,6 +32,6 @@ trace(b) do |location|
   intersections_b[location] = steps_b if intersections.include? location
 end
 
-lowest = intersections.min_by { |i| intersections_a[i] + intersections_b[i] }
+min = intersections.min_by { |i| intersections_a[i] + intersections_b[i] }
 
-puts intersections_a[lowest] + intersections_b[lowest]
+puts intersections_a[min] + intersections_b[min]
