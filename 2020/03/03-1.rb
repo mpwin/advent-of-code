@@ -1,6 +1,6 @@
 trees, x = 0, 0
 
-File.open('input.txt').each do |line|
+File.foreach('input.txt') do |line|
   trees += 1 if line[x] == '#'
 
   x += 3
