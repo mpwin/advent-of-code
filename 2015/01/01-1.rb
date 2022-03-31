@@ -1,3 +1,5 @@
+# Ruby 3.0
+
 floor = 0
 
 File.open('input.txt').each_char do |char|
