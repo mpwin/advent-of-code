@@ -1,5 +1,3 @@
-# Ruby 3.0
-
 floor = 0
 
 File.open('input.txt').each_char.with_index do |char, index|
@@ -10,6 +8,6 @@ File.open('input.txt').each_char.with_index do |char, index|
 
   if floor < 0
     puts index + 1
-    return
+    break
   end
 end
