@@ -1,5 +1,8 @@
 floor: int = 0
-move: dict = {'(': 1, ')': -1}
+move: dict = {
+    '(': 1,
+    ')': -1,
+    }
 
 with open("input.txt") as f:
     char_iter = iter(lambda: f.read(1), '')
